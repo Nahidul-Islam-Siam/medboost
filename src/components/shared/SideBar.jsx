@@ -47,7 +47,7 @@ export function SideBar() {
   const closeDrawer = () => setIsDrawerOpen(false);
  
   return (
-    <div className="z-50">
+    <div className="">
       <IconButton variant="text" size="lg" onClick={openDrawer}>
         {isDrawerOpen ? (
           <XMarkIcon className="h-8 w-8 stroke-2" />

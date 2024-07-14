@@ -1,5 +1,6 @@
 import EmailSend from '@/components/Component/EmailSend';
 import FreeConsultation from '@/components/Component/FreeConsultation';
+import Pricing from '@/components/Component/Pricing';
 import Testimonials from '@/components/Component/Testimonials';
 import Foot1 from '@/components/shared/Foot1';
 import { SideBar } from '@/components/shared/SideBar';
@@ -11,16 +12,16 @@ export default function Home() {
   return (
    <div>
      <div className="container mx-auto overflow-hidden">
-    
-   
-    
-     
-    </div>
     <div className='flex items-center'>
     
     <SideBar/>
     <NavbarComponent />
     </div>
+   
+    
+     
+    </div>
+    <Pricing/>
     <Testimonials/>
       <FreeConsultation/>
     

@@ -39,7 +39,7 @@ export default function NavbarComponent() {
   );
 
   return (
-    <Navbar className="text-xl top-0 fixed z-10 h-max max-w-full bg-white shadow-md rounded-none px-4 py-5 lg:px-8 lg:py-4">
+    <Navbar className="text-xl top-0 sticky  z-10  max-w-full bg-white shadow-md rounded-none px-4 py-5 lg:px-8 lg:py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -52,7 +52,7 @@ export default function NavbarComponent() {
         </Typography>
         <div className="flex items-center gap-4">
           <div className="mr-4 text-4xl font-bold text-[#615E68] hidden lg:block">{navList}</div>
-          <div className="flex items-center gap-x-1">
+          <div className="grid grid-cols-2 items-center">
             <Button variant="text" size="md" className="hidden lg:inline-block">
               <span>Log In</span>
             </Button>
