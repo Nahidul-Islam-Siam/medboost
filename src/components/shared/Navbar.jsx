@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Navbar, MobileNav, Typography, IconButton } from "../TailWindMaterial/Material";
 import Image from 'next/image';
 import logo from '../../../public/logo.png'
-import { SideBar } from './SideBar';
+// import { SideBar } from './SideBar';
 export default function NavbarComponent() {
   const [openNav, setOpenNav] = useState(false);
   const [activeNav, setActiveNav] = useState('Home');
@@ -46,7 +46,7 @@ export default function NavbarComponent() {
           href="#"
           className="mr-4 cursor-pointer items-center py-1.5 font-medium flex"
         >
-          <SideBar className="z-50"/>
+          {/* <SideBar className="z-50"/> */}
         <Image src={logo} alt='' width={100} height={90}/>
         </Typography>
         <div className="flex items-center gap-4">

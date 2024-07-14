@@ -8,8 +8,11 @@ const NavbarComponent = dynamic(() => import('@/components/shared/navbar'), { ss
 export default function Home() {
   return (
     <div className="container mx-auto overflow-hidden">
-      <NavbarComponent />
-      <SideBar/>
+    <div className='flex items-center'>
+    <SideBar/>
+
+    <NavbarComponent />
+    </div>
       <FreeConsultation/>
       <Foot1/>
     </div>
