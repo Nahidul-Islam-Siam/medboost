@@ -1,3 +1,4 @@
+import EmailSend from '@/components/Component/EmailSend';
 import FreeConsultation from '@/components/Component/FreeConsultation';
 import Foot1 from '@/components/shared/Foot1';
 import { SideBar } from '@/components/shared/SideBar';
@@ -7,14 +8,19 @@ const NavbarComponent = dynamic(() => import('@/components/shared/navbar'), { ss
 
 export default function Home() {
   return (
-    <div className="container mx-auto overflow-hidden">
+   <div>
+     <div className="container mx-auto overflow-hidden">
     <div className='flex items-center'>
     <SideBar/>
 
     <NavbarComponent />
     </div>
       <FreeConsultation/>
-      <Foot1/>
+      <EmailSend/>
+      
+     
     </div>
+    <Foot1/>
+   </div>
   );
 }
