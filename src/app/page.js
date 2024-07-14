@@ -1,5 +1,6 @@
 import EmailSend from '@/components/Component/EmailSend';
 import FreeConsultation from '@/components/Component/FreeConsultation';
+import Testimonials from '@/components/Component/Testimonials';
 import Foot1 from '@/components/shared/Foot1';
 import { SideBar } from '@/components/shared/SideBar';
 import dynamic from 'next/dynamic';
@@ -15,11 +16,14 @@ export default function Home() {
 
     <NavbarComponent />
     </div>
-      <FreeConsultation/>
-      <EmailSend/>
-      
+   
+    
      
     </div>
+    <Testimonials/>
+      <FreeConsultation/>
+    
+      <EmailSend/>
     <Foot1/>
    </div>
   );
