@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
   IconButton,
@@ -14,7 +15,7 @@ import {
   Input,
   Drawer,
   Card,
-} from "../TailWindMaterial/Material"
+} from "../TailWindMaterial/Material";
 import {
   PresentationChartBarIcon,
   ShoppingBagIcon,
@@ -46,7 +47,7 @@ export function SideBar() {
   const closeDrawer = () => setIsDrawerOpen(false);
  
   return (
-    <>
+    <div className="z-50">
       <IconButton variant="text" size="lg" onClick={openDrawer}>
         {isDrawerOpen ? (
           <XMarkIcon className="h-8 w-8 stroke-2" />
@@ -237,6 +238,6 @@ export function SideBar() {
           </Alert>
         </Card>
       </Drawer>
-    </>
+    </div>
   );
 }

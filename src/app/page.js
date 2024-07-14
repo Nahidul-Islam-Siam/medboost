@@ -1,3 +1,4 @@
+import Foot1 from '@/components/shared/Foot1';
 import { SideBar } from '@/components/shared/SideBar';
 import dynamic from 'next/dynamic';
 
@@ -8,6 +9,7 @@ export default function Home() {
     <div className="container mx-auto overflow-hidden">
       <NavbarComponent />
       <SideBar/>
+      <Foot1/>
     </div>
   );
 }
