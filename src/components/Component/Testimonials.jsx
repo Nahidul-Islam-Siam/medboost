@@ -38,15 +38,15 @@ const testimonialsData = [
       <section className="bg-[#252327] dark:bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
           <div className="mt-6 md:flex md:items-center md:justify-between">
-            <div >
-             <div>
-             <h1 className="text-gray-300"><span className="text-[#BD4BB9]">| </span>Testimonials</h1>
-              <h1 className="font-bold text-2xl text-white lg:text-5xl ">
+            <div className="flex justify-between">
+             <div >
+             <p className="text-gray-300"><span className="text-[#BD4BB9]">| </span>Testimonials</p>
+              <h1 className="font-bold grow text-2xl md:text-2xl  text-white lg:text-5xl ">
               Your partner in the digital realm, <br /> specializing in social media marketing
               </h1>
              </div>
            <div>
-            <button>All Testimonials</button>
+            <button className="btn bottom-0 mt-20 md:ml-0  lg:ml-56  hidden lg:block ">All Testimonials</button>
            </div>
             </div>
             <div className="flex justify-between mt-8 md:mt-0">
@@ -57,7 +57,7 @@ const testimonialsData = [
           <section className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-2">
             {testimonialsData.map((testimonial, index) => (
               <div key={index} className={`p-8 ${testimonial.bgColor} rounded-lg`}>
-                <p className={`leading-loose ${testimonial.bgColor.includes('bg-') ? 'text-white' : 'text-gray-500 dark:text-gray-400'}`}>
+                <p className={`leading-loose ${testimonial.bgColor.includes('bg-') ? 'text-white text-lg' : 'text-gray-500  font-bold dark:text-gray-400'}`}>
                   {testimonial.text}
                 </p>
                 <div className="flex items-center mt-8 -mx-2">

@@ -11,14 +11,15 @@ export default function Home() {
   return (
    <div>
      <div className="container mx-auto overflow-hidden">
-    <div className='flex items-center'>
-    <SideBar/>
-
-    <NavbarComponent />
-    </div>
+    
    
     
      
+    </div>
+    <div className='flex items-center'>
+    
+    <SideBar/>
+    <NavbarComponent />
     </div>
     <Testimonials/>
       <FreeConsultation/>

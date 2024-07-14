@@ -20,7 +20,7 @@ export default function NavbarComponent() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+    <ul className="mt-2 mb-4 text-2xl flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       {['Home', 'About us', 'Service', 'Pages', 'Blog', 'Contact us'].map((item) => (
         <Typography
           key={item}
@@ -39,20 +39,21 @@ export default function NavbarComponent() {
   );
 
   return (
-    <Navbar className="sticky top-0 z-10 h-max max-w-full bg-white shadow-md rounded-none px-4 py-2 lg:px-8 lg:py-4">
+    <Navbar className="text-xl top-0 fixed z-10 h-max max-w-full bg-white shadow-md rounded-none px-4 py-5 lg:px-8 lg:py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
+          variant='h5'
           className="mr-4 cursor-pointer items-center py-1.5 font-medium flex"
         >
           {/* <SideBar className="z-50"/> */}
         <Image src={logo} alt='' width={100} height={90}/>
         </Typography>
         <div className="flex items-center gap-4">
-          <div className="mr-4 text-3xl text-[#615E68] hidden lg:block">{navList}</div>
+          <div className="mr-4 text-4xl font-bold text-[#615E68] hidden lg:block">{navList}</div>
           <div className="flex items-center gap-x-1">
-            <Button variant="text" size="sm" className="hidden lg:inline-block">
+            <Button variant="text" size="md" className="hidden lg:inline-block">
               <span>Log In</span>
             </Button>
             <Button variant="gradient" size="sm" className="hidden lg:inline-block">
