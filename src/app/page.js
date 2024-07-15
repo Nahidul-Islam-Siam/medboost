@@ -1,4 +1,5 @@
 import EmailSend from '@/components/Component/EmailSend';
+import Faq from '@/components/Component/Faq';
 import FreeConsultation from '@/components/Component/FreeConsultation';
 import Pricing from '@/components/Component/Pricing';
 import Testimonials from '@/components/Component/Testimonials';
@@ -21,6 +22,7 @@ export default function Home() {
     
      
     </div>
+    <Faq/>
     <Pricing/>
     <Testimonials/>
       <FreeConsultation/>

@@ -40,9 +40,9 @@ const Pricing = () => {
       <div className='mx-6'>
 <div className='text-center items-center'>
 <p><span className='text-[#BD4BB9]'>| </span>Our services</p>
-<h1 className='text-4xl text-[#37353B]'>Propelling your brand to new heights in the digital realm</h1>
+<h1 className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#37353B]'>Propelling your brand to new<br /> heights in the digital realm</h1>
 </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-6 mt-8 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 xl:mt-12 lg:grid-cols-3 xl:grid-cols-3 justify-items-center">
           {services.map((service, index) => (
             <div key={index} className="bg-gray-100 p-10 md:p-12 lg:p-14 rounded-lg shadow-md max-w-screen-lg">
               <h2 className="text-xl font-bold mb-2">{index + 1}/ {service.title}</h2>
