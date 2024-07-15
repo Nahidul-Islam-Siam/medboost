@@ -22,9 +22,10 @@ export default function Home() {
     
      
     </div>
-    <Faq/>
+   
     <Pricing/>
     <Testimonials/>
+    <Faq/>
       <FreeConsultation/>
     
       <EmailSend/>
